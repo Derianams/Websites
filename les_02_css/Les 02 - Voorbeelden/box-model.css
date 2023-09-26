@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.hello {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    padding: 20px;
+    border: 10px solid burlywood;
+    margin: auto;
+}
+
+.doeEensRaar {
+    padding: 20px;
+    margin-top: 50px;
+    border: 10px solid burlywood;
+}
+
+.c-left {
+    width: 60%;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: azure;
+}
+
+
+/* .c-middle {
+    width: 20%;
+    float: right;
+} */
+
+.c-right {
+    width: 40%;
+    float: right;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: khaki;
+}
+
+#span1 {
+    background-color: red;
+    color: white;
+}

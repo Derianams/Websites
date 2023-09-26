@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID en Class selectors</title>
+
+    <style>
+        /* Algemene opmaak */
+
+        body {
+            font-family: Arial, sans-serif;
+            /* lettertype */
+            margin: 0 auto;
+            /* marge */
+            padding: 0 20px 20px 20px;
+            /* padding (top, right, bottom, left) */
+        }
+
+        /* Stijl voor de klasse "red-text" */
+
+        .red-text {
+            color: red;
+        }
+
+        /* Stijl voor het id "blue-paragraph" */
+
+        #blue-paragraph {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ID en Class selectors</h1>
+
+    <div class="container">
+        <p class="red-text">Dit is een rode tekst met een class-selector.</p>
+    </div>
+
+    <div>
+        <p id="blue-paragraph">Dit is een blauwe tekst met een id-selector. Een ID is uniek en kan maar 1 keer gebruikt
+            worden in een pagina.</p>
+    </div>
+
+    <div>
+        <p class="red-text">Dit is nog een rode tekst met dezelfde class-selector.</p>
+    </div>
+
+    <div>
+        <p class="red-text">Dit is de laatste div met een rode tekst met dezelfde class-selector.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating</title>
+
+    <style>
+        /* Algemene opmaak */
+
+        body {
+            font-size: 14px;
+            /* px means "pixels": the base font size is now 10 pixels high */
+            font-family: "Open Sans", sans-serif;
+            /* sans-serif is a fallback in case the font doesn't load */
+        }
+
+        img.logo_client {
+            border: 2px solid #fff;
+            border-radius: 5%;
+            margin: 15px;
+            float: left;
+            opacity: 0.25;
+            max-width: 150px;
+        }
+
+        img.logo_client:hover {
+            border: 2px solid #fa6432;
+            border-radius: 5%;
+            margin: 15px;
+            opacity: 1;
+        }
+
+        /* Floating the box */
+
+        .clear {
+            clear: both;
+        }
+
+        .box {
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: rgb(207, 232, 220);
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<a>
+    <!-- Voorbeeld versterken of benadrukken tekst (inline) -->
+    <h1>Floating images</h1>
+
+    <h2>Onze klanten</h2>
+    <a href="http://ww.klant1.be" target="_blank ">
+        <img class=" logo_client " src=" images/clients/client-1.png " alt=" Klant 1 " title=" Klant 1 "></a>
+    <a href=" http://ww.klant1.be" target="blank">
+        <img class="logo_client" src="images/clients/client-2.png" alt="Klant 2" title="Klant 2"></a>
+    <a href="http://ww.klant1.be" target="_blank ">
+        <img class=" logo_client " src=" images/clients/client-3.png " alt=" Klant 3 " title=" Klant 3 "></a>
+    <a href=" http://ww.klant1.be" target="blank">
+        <img class="logo_client" src="images/clients/client-4.png" alt="Klant 4" title="Klant 4"></a>
+    <a href="http://ww.klant1.be" target="_blank ">
+        <img class=" logo_client " src=" images/clients/client-5.png " alt=" Klant 5 " title=" Klant 5 "></a>
+    <a href=" http://ww.klant1.be" target="blank">
+        <img class="logo_client" src="images/clients/client-6.png" alt="Klant 6" title="Klant 6"></a>
+
+
+
+
+    <h2 class="clear">Float example</h2>
+    <div class="box">Floatbox</div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+        vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at
+        ultricies tellus laoreet sit amet.
+    </p>
+
+    <p>
+        Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+        Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat.
+        Suspendisse ac imperdiet turpis.
+        Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec
+        lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.
+    </p>
+
+    <p>
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est,
+        posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem.
+        Vivamus tristique elit dolor, sed pretium
+        metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis
+        vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus
+        mus.
+    </p>
+
+
+    </body>
+
+</html>
