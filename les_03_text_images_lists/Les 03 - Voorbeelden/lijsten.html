@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <style>
+        /* Algemene opmaak */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 15;
+        }
+
+        /* Opmaak voor de klasse animal-list */
+
+        .animal-list {
+            list-style-type: none;
+            padding: 0;
+            width: 25%;
+        }
+
+        .animal-list li {
+            background-color: #00283c;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .animal-list li:hover {
+            background-color: #fa6432;
+        }
+
+        /* Opmaak voor de klasse music-genres */
+
+        .music-genres {
+            list-style-type: decimal;
+            padding: 0;
+            width: 25%;
+        }
+
+        .music-genres li {
+            background-color: #00283c;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .music-genres li:hover {
+            background-color: #fa6432;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Opsommingslijst unordered -->
+    <h2>Niet-genummerde lijsten</h2>
+    <ul>
+        <li>Hond</li>
+        <li>Kat</li>
+        <li>Vogel</li>
+        <li>Konijn</li>
+    </ul>
+
+    <ul class="animal-list">
+        <li>Hond</li>
+        <li>Kat</li>
+        <li>Vogel</li>
+        <li>Konijn</li>
+    </ul>
+
+    <!-- Opsommingslijst ordered -->
+    <h2>Genummerde lijst</h2>
+    <ol>
+        <li>Pop</li>
+        <li>R&amp;B</li>
+        <li>Jazz</li>
+        <li>Rock</li>
+    </ol>
+
+    <ol class="music-genres">
+        <li>Pop</li>
+        <li>R&amp;B</li>
+        <li>Jazz</li>
+        <li>Rock</li>
+    </ol>
+
+    <!-- Definitielijsten -->
+    <h2>Definitielijsten</h2>
+    <dl>
+        <dt>Genummerde lijst</dt>
+        <dd>Opsomming voorafgegaan door nummers.</dd>
+        <dt>Niet-genummerde lijst</dt>
+        <dd>Opsomming voorafgegaan door symbolen.</dd>
+        <dt>Definitielijst</dt>
+        <dd>Verklarende woordenlijst</dd>
+    </dl>
+
+    <!-- Het principe van geneste lijsten -->
+    <h2>Voorbeeld geneste lijsten</h2>
+    <ul>
+        <li>first item</li>
+        <li>
+            second item
+            <!-- Om een nieuwe lijst te starten binnen een item, sluiten we de li-tag nog niet af met </li> -->
+            <ol>
+                <li>second item first subitem</li>
+                <li>second item second subitem</li>
+                <li>second item third subitem</li>
+            </ol>
+            <!-- Hier komt pas de sluittag </li>, na het einde van de nieuwe lijst  -->
+        </li>
+        <li>third item</li>
+    </ul>
+</body>
+
+</html>

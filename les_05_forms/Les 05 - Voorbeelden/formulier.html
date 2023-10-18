@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulier</title>
+    <style>
+        /* label,
+        textarea,
+        legend {
+            vertical-align: top;
+            color: cornflowerblue;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-weight: 700;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Stel uw vraag hier:</h1>
+
+    <form action="https://tm-statweb.be/forms.php" method="POST">
+        <div>
+            <label for="naam">Naam: <input type="text" id="naam" name="naam" required></label>
+        </div>
+
+        <div>
+            <label for="email">Email: <input type="email" id="email" name="email" required></label>
+        </div>
+
+        <div>
+            <label for="website">Website: <input type="url" id="website" name="website" required></label>
+        </div>
+
+        <div>
+            <label for="reactie">Reactie: <textarea rows="5" id="reactie" name="reactie"></textarea>
+            </label>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Geslacht</legend>
+                <div>
+                    <label for="male">Male <input type="radio" id="male" name="gender" value="male"></label>
+                    <label for="female">Female<input type="radio" id="female" name="gender" value="female"></label>
+                    <label for="other">Other <input type="radio" id="other" name="gender" value="other"></label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="opdehoogtehouden">Hou me op de hoogte:
+                <input type="checkbox" value="yes" id="opdehoogtehouden" name="opdehoogtehouden">
+            </label>
+        </div>
+
+        <div>
+            <input type="submit" value="Indienen">
+        </div>
+    </form>
+</body>
+
+</html>

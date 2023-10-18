@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel: caption</title>
+    <style>
+      caption {
+        padding: 10px;
+        caption-side: bottom;
+      }
+
+      table.strips {
+        margin: 1em;
+        /* 1em means "equal to the current font size" */
+        border: dotted 1px #00283c;
+        border-collapse: collapse;
+        /* border-collapse: separate; */
+        border-spacing: 0;
+      }
+
+      table.strips td {
+        border: dotted 1px #00283c;
+        /* padding: 10px; */
+        color: #c03d1e;
+      }
+
+      table.strips th {
+        border: dotted 1px #00283c;
+        padding: 5px;
+        background-color: #00283c;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Tabel caption</h1>
+
+    <table class="strips">
+      <caption>
+        Tabel 1: Stripverhalen
+      </caption>
+      <tr>
+        <th>Oude strips</th>
+        <th>Recente strips</th>
+      </tr>
+      <tr>
+        <td>Suske en Wiske</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Jommeke</td>
+        <td>Basta</td>
+      </tr>
+    </table>
+  </body>
+</html>

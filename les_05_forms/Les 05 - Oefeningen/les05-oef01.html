@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les 05 - oef 01</title>
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .input {
+        background-color: lightblue;
+      }
+
+      .text:focus {
+        background-color: #fff;
+      }
+
+      form {
+        width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="tm-statsweb.be/forms.php" method="post">
+      <div><label for="Voornaam">Voornaam:</label></div>
+        <input
+          class="input text"
+          type="text"
+          name="Voornaam"
+          id="Voornaam"
+          placeholder="Voornaam"
+        />
+
+      <div><label for="Familienaam">Familienaam:</label></div>
+        <input class="input text"
+          type="text"
+          name="Familienaam"
+          id="Familienaam"
+          placeholder="Familienaam"
+        />
+
+      <div><input type="submit" value="Registreren" /></div>
+    </form>
+  </body>
+</html>

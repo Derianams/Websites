@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div vs span</title>
+    <style>
+        /* Algemene opmaak */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 25px;
+        }
+
+        /* Stijl voor het eerste div-element met de klasse 'styled-box' */
+
+        .styled-box {
+            background-color: #009cab;
+            color: white;
+            padding: 5px;
+        }
+
+        /* Stijl voor het h2-element binnen het eerste div-element met de klasse 'styled-box' */
+
+        .styled-box h2 {
+            font-size: 1.5em;
+        }
+
+        /* Stijl voor de span-elementen met klasse 'blue-bold' */
+
+        .blue-bold {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Stijl voor de span-elementen met klasse 'green-bold' */
+
+        .green-bold {
+            color: darkolivegreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Voorbeeld versterken of benadrukken tekst (inline) -->
+    <h1>DIV block-level</h1>
+    <div class="styled-box">
+        <h2>Pioniersdagen</h2>
+        <div>
+            Deze dagen maken je het een stuk makkelijker om succesvol te starten.
+        </div>
+    </div>
+
+    <h1>SPAN inline</h1>
+    <p>
+        Mijn moeder heeft
+        <span class="blue-bold">blauwe</span> ogen en mijn vader heeft
+        <span class="green-bold">donker groene</span> ogen.
+    </p>
+
+</body>
+
+</html>

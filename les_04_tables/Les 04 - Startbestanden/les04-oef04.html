@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les 04 - oef 04</title>
+
+    <style>
+      body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 12px;
+      }
+
+      h1 {
+        color: #fa6432;
+        font-style: bold;
+      }
+      table {
+        border: 3px black;
+        text-align: center;
+      }
+      td, th{
+        border: 1px solid gray;
+        height: 50px;
+        padding: 0 15px 0 15px;
+      }
+      th {
+        border: 1px solid;
+      }
+
+      .nadruk {
+        font-weight: bold;
+      }
+
+      #logo {
+        width: 150px;
+      }
+      #startdag {
+        font-family: 'Sacramento', cursive;
+        font-size: 32px;
+        background-color: #fa6432;
+        color: white;
+      }
+
+      caption {
+        caption-side: bottom;
+        font-size: small;
+        padding:  2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thomas More Kempen</h1>
+    <h2>Programmeren in dagonderwijs</h2>
+
+    <table>
+        <caption>Overzicht van de activiteiten</caption>
+      <tr>
+        <td colspan="3" rowspan="3"><a href="https://www.thomasmore.be/" target="_blank"><img id="logo" src="thomas-more-logo_oranje_WEB.png" alt="Thomas More logo"/></a></td>
+        <th class="nadruk" colspan="5">Graduaat (HBO5)</th>
+      </tr>
+      <tr>
+        <td class="nadruk" colspan="2">Schema</td>
+        <td class="nadruk" colspan="3" rowspan="2">Inhoud</td>
+      </tr>
+      <tr>
+        <td class="nadruk">Begin</td>
+        <td class="nadruk">Einde</td>
+      </tr>
+      <tr>
+        <td class="nadruk" rowspan="2" colspan="3">Woensdag</td>
+        <td rowspan="2">8:30</td>
+        <td rowspan="2">12:00</td>
+        <td colspan="3">Inleiding Hoger onderwijs</td>
+      </tr>
+      <tr>
+        <td colspan="3">Rondleiding op de campus</td>
+      </tr>
+      <tr>
+        <td class="nadruk" colspan="3" rowspan="3">Donderdag</td>
+        <td>8:30</td>
+        <td>12:00</td>
+        <td colspan="3" rowspan="3" id="startdag">Startdag</td>        
+      </tr>
+      <tr>
+        <td>10:45</td>
+        <td>14:30</td>
+      </tr>
+      <tr>
+        <td>14:30</td>
+        <td>15:30</td>
+      </tr>
+    </table>
+  </body>
+</html>

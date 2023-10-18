@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les 04 - oef 03</title>
+
+    <style>
+      body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      table {
+        border: 3px black;
+      }
+      td {
+        border: 1px solid;
+        height: 50px;
+        margin: 4px;
+        text-align: center;
+      }
+      th {
+        border: 1px solid;
+      }
+      .rij1 {
+        background-color: lightgray;
+      }
+      .no-background {
+            background-color: white;
+        }
+
+        .breedte1 {
+            width: 200px;
+        }
+        
+        .breedte2 {
+            width: 100px;
+        }
+        .red {
+            background-color: rgb(255, 57, 57);
+        }
+        .green {
+            background-color: lightgreen;
+        }
+
+    </style>
+  </head>
+  <body>
+      <table>
+        <caption>
+          Aantal koppen koffie per persoon
+        </caption>
+        <tr class="rij1">
+          <td rowspan="5" class="no-background"><img src="koffie.jpg" alt="koffie" /></td>
+          <th class="breedte1">Naam</th>
+          <th class="breedte1">Aantal koppen</th>
+          <th class="breedte2">Type</th>
+          <th class="breedte2">Suiker</th>
+        </tr>
+        <tr>
+          <td class="breedte1">Jasper Vervliet</td>
+          <td class="breedte1">10</td>
+          <td class="breedte2">Zo zwart mogelijk</td>
+          <td class="breedte2 green">ja</td>
+        </tr>
+        <tr>
+          <td class="breedte1">Maaike van den Bulck</td>
+          <td class="breedte1 green">15</td>
+          <td class="breedte2">Normaal</td>
+          <td class="breedte2 red">Nee</td>
+        </tr>
+        <tr>
+          <td class="breedte1">Nele Beerten</td>
+          <td class="breedte1 red">0</td>
+          <td class="breedte2">Deca</td>
+          <td class="breedte2 green">ja</td>
+        </tr>
+        <tr>
+          <td class="breedte1">Anja Raymaekers</td>
+          <td class="breedte1">6</td>
+          <td class="breedte2">Normaal</td>
+          <td class="breedte2 green">ja</td>
+        </tr>
+      </table>
+  </body>
+</html>

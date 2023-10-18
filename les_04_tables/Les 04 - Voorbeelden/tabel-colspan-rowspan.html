@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel: colspan, rowspan</title>
+    <link rel="stylesheet" href="CSS/stijl-tabel.css">
+</head>
+
+<body>
+    <h1>Tabel kolommen samenvoegen</h1>
+    <table class="border">
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+            <td>cel 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">samengevoegd 4+5+6</td>
+        </tr>
+        <tr>
+            <td>cel 7</td>
+            <td>cel 8</td>
+            <td>cel 9</td>
+        </tr>
+    </table>
+
+
+    <h1>Tabel rijen samenvoegen</h1>
+    <table class=" border ">
+        <tr>
+            <td>cel 1</td>
+            <td>cel 2</td>
+            <td>cel 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">samengevoegd 4+7</td>
+            <td>cel 5</td>
+            <td>cel 6</td>
+        </tr>
+        <tr>
+            <!-- <td>cel 7</td> -->
+            <td>cel 8</td>
+            <td>cel 9</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

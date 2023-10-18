@@ -1,0 +1,93 @@
+table {
+  margin: 20px 0;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: #c03d1e;
+}
+
+table.border {
+  margin: 1em;
+  /* 1em means "equal to the current font size" */
+  border: dotted 1px gray;
+  border-collapse: collapse;
+  /* separate; */
+}
+
+table.border td {
+  border: dotted 1px gray;
+  padding: 5px;
+}
+
+table.border th {
+  border: dotted 1px gray;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+table.strips {
+  margin: 1em;
+  /* 1em means "equal to the current font size" */
+  border: dotted 1px #00283c;
+  border-collapse: collapse;
+  /* separate; */
+  border-spacing: 0;
+}
+
+table.strips td {
+  border: dotted 1px #00283c;
+  padding: 10px;
+  color: #c03d1e;
+}
+
+table.strips th {
+  border: dotted 1px #00283c;
+  padding: 5px;
+  background-color: #00283c;
+  color: white;
+}
+
+/* Voorbeeld border-spacing */
+
+table.border-spacing {
+  margin: 1em;
+  /* 1em means "equal to the current font size" */
+  border: dotted 1px gray;
+  border-collapse: separate;
+  border-spacing: 5px 1rem;
+  /* 5px horizontal spacing, 1rem vertical spacing */
+}
+
+table.border-spacing td {
+  border: dotted 1px gray;
+  padding: 5px;
+}
+
+table.border-spacing th {
+  border: dotted 1px gray;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+/* Voorbeeld cell-padding */
+
+table.cell-padding {
+  margin: 1em;
+  /* 1em means "equal to the current font size" */
+  border: dotted 1px gray;
+  border-collapse: collapse;
+}
+
+table.cell-padding td {
+  border: dotted 1px gray;
+  padding: 15px 35px;
+  text-align: center;
+}
+
+table.cell-padding th {
+  border: dotted 1px gray;
+  padding: 5px;
+  background-color: lightgray;
+}

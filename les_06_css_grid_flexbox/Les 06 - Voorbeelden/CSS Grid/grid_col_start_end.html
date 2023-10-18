@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            height: 80vh;
+            grid-gap: 30px 30px;
+            /* Column config */
+            grid-template-columns: 20% 60% auto;
+            grid-template-rows: 1fr 4fr 1fr 0.5fr;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        
+        .grid-container>div {
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid</h1>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>voorbeeld rowspan</title>
+
+    <style>
+      table {
+        border: 1px solid red;
+        
+      }
+      td {
+        border: 1px solid red;
+        padding: 1em;
+      }
+      th {
+        border: 1px solid red;
+        background-color: rgb(240, 206, 209);
+        text-align: center;
+      }
+      hr{
+        border:1px  solid red;
+        margin: 1em 0em 1em 0em;
+      }
+
+      .extra{
+        margin: 2em;
+      }
+
+      caption{
+        padding: 10px;
+        caption-side:bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>cel 1</td>
+        <td>cel 2</td>
+        <td>cel 3</td>
+      </tr>
+      <tr>
+        <td colspan="3">samengevoegd 4 + 5 + 6</td>
+      </tr>
+      <tr>
+        <td>cel 7</td>
+        <td>cel 8</td>
+        <td>cel 9</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <tr>
+        <td>cel 1</td>
+        <td>cel 2</td>
+        <td>cel 3</td>
+      </tr>
+      <tr>
+        <td>cel 4</td>
+        <td>cel 5</td>
+        <td rowspan="2">samengevoegd 6 + 9</td>
+      </tr>
+      <tr>
+        <td>cel 7</td>
+        <td>cel 8</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <tr>
+        <th>cel 1</th>
+        <th colspan="2">samengevoegd</th>
+      </tr>
+      <tr>
+        <th rowspan="2">samengevoegd</th>
+        <td>cel 5</td>
+        <td>cel 6</td>
+      </tr>
+      <tr>
+        <td>cel 8</td>
+        <td>cel 9</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>cel 11</td>
+            <td>cel 12</td>
+            <td>cel 13</td>
+        </tr>
+        <tr>
+            <td>cel 21</td>
+            <td colspan="2" rowspan="2">samengevoegd</td>
+        </tr>
+        <tr>
+            <td>cel 31</td>
+        </tr>
+    </table>
+     
+    <hr>
+
+    <table>
+        <caption>Tabel 266415: Talenkennis</caption>
+        <tr>
+            <th>Voornaam</th>
+            <td>Arthur</td>
+        </tr>
+        <tr>
+            <th>Famielienaam</th>
+            <td>Peeters</td>
+        </tr>
+        <tr>
+            <th>Talenkennis</th>
+            <td>
+                <table class="extra">
+                    <tr>
+                        <th>Nederlands</th>
+                        <th>Frans</th>
+                        <th>Engels</th>
+                    </tr>
+                    <tr>
+                        <td>moedertaal</td>
+                        <td>goed</td>
+                        <td>zeer goed</td>
+                    </tr>
+                </table>                
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>

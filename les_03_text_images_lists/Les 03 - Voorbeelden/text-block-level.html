@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text block level</title>
+
+    <style>
+        /* Algemene opmaak */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 25px;
+        }
+
+        /* Stijl voor de paragraaf met de klasse 'right-align' */
+
+        .right-align {
+            text-align: right;
+        }
+
+        /* Stijl voor de paragraaf met de klasse 'hidden-text' */
+
+        .hidden-text {
+            display: none;
+        }
+
+        /* Opmaak voor de tag address */
+
+        address {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ffffff;
+            background-color: #00283c;
+            padding: 10px;
+            border: 1px solid #fa6432;
+            border-radius: 15px;
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Soorten headings -->
+    <h1>De titel van mijn hoofdstuk</h1>
+    <h2>De titel van een subonderdeel in mijn hoofdstuk</h2>
+    <h3>De titel van een paragraaf</h3>
+    <h4>De ondertitel van een paragraaf</h4>
+    <h5>Ik ben nog kleiner dan H4</h5>
+    <h6>Ik ben de kleinste header</h6>
+
+    <!-- Voorbeeld combinatie headings & paragrafen -->
+    <h1>Infodagen</h1>
+    <h2>Een vlotte start op Thomas More!</h2>
+
+    <p>
+        Bij Thomas More start je jouw eerste academiejaar met 'onthaaldagen'. Op deze dagen serveren we een perfecte
+        combinatie van gezellige ontspanningsactiviteiten en interessante infosessies.
+        <!-- Deze witruimte is niet zichtbaar online! -->
+        Deze infosessies zijn een must, ze maken deel uit van je opleidingsprogramma. Zo leer je jouw studiegenoten, je
+        campus en je opleiding al kennen nog voor je één les kreeg.
+    </p>
+
+    <!-- Wil je dat HTML de spaties exact weergeeft, gebruik dan de pre-tag. -->
+    <pre>
+Bij Thomas More start je                 jouw eerste academiejaar met 'onthaaldagen'. </pre>
+
+    <h2>Start van academiejaar 2020-2021</h2>
+    <!-- Attributen bij een paragraaf -->
+    <p class="right-align">
+        De start van academiejaar 2020-2021 zal er nét iets anders uitzien. Zo zal een deel van de onthaaldagen online
+        plaatsvinden en een deel op de campus. Hoe dit er exact uitziet en wat dit betekent voor jouw planning, kan je
+        lezen op de pagina van jouw campus.
+    </p>
+
+    <p class="hidden-text">
+        Deze tekst zou je niet mogen zien verschijnen op de webpagina, maar wel in de broncode!
+    </p>
+
+    <!-- Address-tag & regeleinde -->
+    <address>
+        Thomas More Kempen <br>
+        Kleinhoefstraat 4 <br>
+        2440 Geel <br>
+    </address>
+</body>
+
+</html>

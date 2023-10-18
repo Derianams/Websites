@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voorbeelden</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        form {
+            width: 50%;
+            padding: 15px;
+            border-radius: 1rem;
+            border: 4px solid lightgray;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 2px solid darkgray;
+            background-color: rgb(83, 83, 83);
+            border-radius: 0.5rem;
+            color: white;
+        }
+
+        label {
+            display: inline-block;
+            padding-bottom: 10px;
+            color: rgb(73, 73, 73);
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="post" action="https://tm-statweb.be/forms.php">
+
+        <div>
+            <label for="naam">Naam:
+                <input type="text" id="naam" name="naam" />
+            </label>
+        </div>
+        <div>
+            <label for="nr">Huisnummer:
+                <input type="number" id="nr" name="nr" />
+            </label>
+        </div>
+        <div>
+            <label for="mail">E-mail:
+                <input type="email" id="mail" name="mail" required />
+            </label>
+        </div>
+        <div>
+            <label for="website">Website:
+                <input type="url" id="website" name="website" />
+            </label>
+        </div>
+        <div>
+            <label for="wachtwoord">Wachtwoord:
+                <input type="password" id="wachtwoord" name="wachtwoord" required />
+            </label>
+        </div>
+
+        <div> <label for="reactie">Reactie</label> </div>
+        <div>
+            <textarea name="reactie" id="reactie" cols="40" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="html">HTML
+                <input type="radio" id="html" name="fav_language" value="html">
+            </label>
+            <label for="css">CSS
+                <input type="radio" id="css" name="fav_language" value="css">
+            </label>
+            <label for="js">JavaScript
+                <input type="radio" id="js" name="fav_language" value="js">
+            </label>
+        </div>
+
+
+        <div>
+            <label for="html">Fiets
+                <input type="checkbox" id="vervoer1" name="vervoer1" value="Fiets">
+            </label>
+            <label for="html">Auto
+                <input type="checkbox" id="vervoer2" name="vervoer2" value="Auto">
+            </label>
+            <label for="html">Bus
+                <input type="checkbox" id="vervoer3" name="vervoer3" value="Bus">
+            </label>
+            <label for="html">Trein
+                <input type="checkbox" id="vervoer4" name="vervoer4" value="Trein">
+            </label>
+        </div>
+
+        <div>
+            <label for="html">Kies een kleur:
+                <select name="kleur" id="kleur">
+                    <option></option>
+                    <option value="rood">rood</option>
+                    <option value="blauw">blauw</option>
+                    <option value="groen">groen</option>
+                    <option value="geel">geel</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="verzenden">
+                <input type="submit" value="Verzenden" id="verzenden" name="verzenden">
+            </label>
+        </div>
+    </form>
+
+</body>
+
+</html>

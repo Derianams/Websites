@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      /* Create four equal columns that sits next to each other */
+
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      /* Responsive layout - makes a two column-layout instead of four columns */
+
+      @media (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      /* container */
+
+      .img-hover-zoom {
+        /* Alleen gebruiken wanneer je wilt inzoomen, niet bij uitzoomen */
+        overflow: hidden;
+        /* Hide the overflowing of child elements;*/
+      }
+      /* smooth transformation of images */
+
+      .img-hover-zoom img {
+        transition: transform 1.2s ease;
+      }
+      /* transforming the image when container gets hovered */
+
+      .img-hover-zoom:hover img {
+        transform: scale(0.9);
+        /* transform: scale(1.2); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Responsive image grid</h1>
+      <p>Hover over the images to see the zoom effect.</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="img-hover-zoom">
+          <img src="img/andy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/brady.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/jeremy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/luis.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/ryan.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/trace.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/valentina.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/zami.jpg" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="img-hover-zoom">
+          <img src="img/josh.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/zami.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/valentina.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/luis.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/jeremy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/ryan.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/sean.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/brady.jpg" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="img-hover-zoom">
+          <img src="img/sean.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/trace.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/jeremy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/andy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/brady.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/valentina.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/andy.jpg" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="img-hover-zoom">
+          <img src="img/luis.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/valentina.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/ryan.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/jeremy.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/ryan.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/josh.jpg" style="width: 100%" />
+        </div>
+        <div class="img-hover-zoom">
+          <img src="img/brady.jpg" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

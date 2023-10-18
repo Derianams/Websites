@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.left {
+    width: 60%;
+    padding: 15px;
+}
+
+.right {
+    width: 40%;
+    padding: 15px;
+}
+
+.bottom {
+    width: 25%;
+    padding: 15px;
+}
+@media screen and (max-width: 500px) {
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .bottom {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+}

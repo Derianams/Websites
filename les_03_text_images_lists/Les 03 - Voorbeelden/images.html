@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+        /* Opmaak voor de afbeelding */
+
+        .logo-oranje {
+            border: 3px solid #00283c;
+            border-radius: 10px;
+            max-height: 150px;
+        }
+
+        .logo-container .logo-wit {
+            background-color: #00283c;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            width: 25%;
+            /* Voeg de gewenste breedte toe */
+        }
+
+        .partner {
+            width: 25%;
+        }
+
+        .mok {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Afbeelding staat in dezelfde map als deze webpagina -->
+        <img src="mok-logo.png" alt="Thomas More Graduaat" title="Thomas More Graduaat" class="mok">
+    </div>
+
+    <div class="logo-container">
+
+        <!-- Afbeelding staat in de map media/thomasmore -->
+        <img src="media/thomasmore/thomas-more-logo_wit_WEB.png" alt="Logo Thomas More wit" title="Logo Thomas More wit"
+            class="logo-wit">
+    </div>
+
+    <div>
+        <!-- Afbeelding staat in de map media/thomasmore vertrekkend vanaf de root 
+             Dus afhankelijk hoe de project folder is ingesteld van uw editor, 
+             zal deze afbeelding zichtbaar zijn of niet! -->
+        <img src="media/thomasmore/thomas-more-logo_oranje_WEB.png" alt="Logo Thomas More zichtbaar?"
+            title="Logo Thomas More oranje" class="logo-oranje">
+    </div>
+
+    <div>
+        <!-- Afbeelding staat in de map media/thomasmore/partners, breedte in percentage -->
+        <img src="media/thomasmore/partners/telenet-tm.jpg" alt="Partner Telenet - Thomas More"
+            title="Partner Telenet - Thomas More" class="partner">
+    </div>
+
+    <div>
+        <!-- Afbeelding dummy -->
+        <img src="https://via.placeholder.com/800x200/00283c/ffffff.png?text=Hier hebben we nog geen afbeelding!"
+            alt="Partner Telenet - Thomas More" title="Partner Telenet - Thomas More">
+    </div>
+</body>
+
+</html>
