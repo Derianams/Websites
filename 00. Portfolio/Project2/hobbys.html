@@ -5,79 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby's</title>
-    <script src="https://kit.fontawesome.com/aab0dc8977.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/favicon_blue.png" type="image/png" sizes="HeightxWidth|any">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="icon"
+      href="img/favicon_blue.png"
+      type="image/png"
+      sizes="HeightxWidth|any"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
-</head>
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-    <nav class="sticky">
-        <ul>
-            <li><a href="index.html" class="active">DERIANA&nbsp;MORAIS</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="ervaring.html">Ervaring</a></li>
-            <li><a href="#" id="currentpage">Hobby's</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://www.instagram.com/deriana.ms/" target="_blank"><i class="social fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/deriana-morais/" target="_blank"><i class="social fa-brands fa-linkedin-in fa-lg" style="color: #ffffff;"></i></a></li>
-        </ul>
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-primary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Deriana Morais</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ervaring.html">Ervaring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.instagram.com/deriana.ms/"
+                target="_blank"
+                class="nav-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/deriana-morais/"
+                target="_blank"
+                class="nav-link"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
-        <section class="hobbies">
-            <h2>Hobby's en Interesses</h2>
-            <div class="hobby-item">
-                <h3>Voetballen bij ksk Herentals</h3>
-                <p>Voetballen is niet alleen een sport voor mij; het is een passie die me energie geeft en me leert om als team te werken. Als lid van ksk Herentals geniet ik van de spanning van de wedstrijden en de vreugde van het samenspelen met mijn teamgenoten. Het veld is mijn speeltuin waar ik mijn vaardigheden verbeter, vriendschappen smeed en belangrijke levenslessen leer zoals doorzettingsvermogen, teamwork en discipline.</p>
-            </div>
-            <div class="hobby-item">
-                <h3>Programmeren</h3>
-                <p>Programmeren is mijn creatieve uitlaatklep en een intrigerende reis door de wereld van technologie. Het vermogen om code te schrijven en software te ontwikkelen opent deuren naar eindeloze mogelijkheden. Als gepassioneerde programmeur experimenteer ik met verschillende programmeertalen, bouw ik webapplicaties en werk ik aan boeiende projecten. Het proces om problemen op te lossen en innovatieve oplossingen te bedenken, fascineert me en drijft me om voortdurend te leren en te groeien.</p>
-            </div>
-            <div class="hobby-item">
-                <h3>Kledij en Schoenen Verkopen op Vinted</h3>
-                <p>Naast mijn technische interesses ben ik ook geïnteresseerd in mode en duurzaamheid. Op platforms zoals Vinted heb ik mijn eigen kleine online winkel gecreëerd waar ik mijn gebruikte kleding en schoenen verkoop. Het is niet alleen een manier om mijn kledingkast op te ruimen, maar ook een bewuste keuze om bij te dragen aan een meer circulaire economie. Het fotograferen van kledingstukken, het onderhandelen met klanten en het creëren van aantrekkelijke productbeschrijvingen zijn vaardigheden die ik heb ontwikkeld door deze hobby, wat het voor mij een waardevolle en leerzame ervaring maakt.</p>
-            </div>
+      <section class="hobbies">
+          <div class="container py-5">
+              <h2 class="text-center mb-4 pt-4">Hobby's en Interesses</h2>
+              
+              <!-- Bootstrap Carousel -->
+              <div id="hobbiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <!-- Slide 1 -->
+                      <div class="carousel-item active">
+                          <img src="img/voetbal.jpg" class="d-block w-100" alt="voetbal">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Voetballen bij ksk Herentals</h5>
+                              <p>Ik speel voetbal bij ksk Herentals en geniet van teamwork en competitie op het veld.</p>
+                          </div>
+                      </div>
+                      <!-- Slide 2 -->
+                      <div class="carousel-item">
+                          <img src="img/programming.jpg" class="d-block w-100" alt="programmeren">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Programmeren</h5>
+                              <p>Als gepassioneerde programmeur ontwikkel ik software en ontdek ik nieuwe technologieën.</p>
+                          </div>
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="carousel-item">
+                          <img src="img/vinted.jpg" class="d-block w-100" alt="online verkopen">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Kledij en schoenen verkopen op Vinted</h5>
+                              <p>Op Vinted deel ik mijn stijl en verkoop ik unieke items in mijn kleine online winkel.</p>
+                          </div>
+                      </div>
+                      <!-- Slide 4 -->
+                      <div class="carousel-item">
+                          <img src="img/basketball.jpg" class="d-block w-100" alt="basketbal">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Basketbal</h5>
+                              <p>Hoewel ik er niet goed in ben, geniet ik van het kijken naar basketbal, vooral women's college basketball.</p>
+                          </div>
+                      </div>
+                      <!-- Slide 5 -->
+                      <div class="carousel-item">
+                          <img src="img/spotify.jpg" class="d-block w-100" alt="spotify homepage">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Muziek luisteren</h5>
+                              <p>Elke dag breng ik minstens 2 uur door met luisteren naar muziek en podcasts</p>
+                          </div>
+                      </div>
+                      <!-- Slide 3 -->
+                      <div class="carousel-item">
+                          <img src="img/cinema.jpg" class="d-block w-100" alt="cinema full of people">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Cinema</h5>
+                              <p>Ik hou van films kijken en ga minstens 1 keer per maand naar de cinema.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Carousel controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
 
-            <table>
-                <tr>
-                    <th>Hobby</th>
-                    <th>Omschrijving</th>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td>Voetballen bij ksk Herentals</td>
-                    <td>Ik speel voetbal bij ksk Herentals en geniet van teamwork en competitie op het veld.</td>
-                    <td><img src="img/voetbal.jpg" alt="Voetbal"></td>
-                </tr>
-                <tr>
-                    <td>Programmeren</td>
-                    <td>Als gepassioneerde programmeur ontwikkel ik software en ontdek ik nieuwe technologieën.</td>
-                    <td><img src="img/programming.jpg" alt="Programmeren"></td>
-                </tr>
-                <tr>
-                    <td>Kledij en Schoenen Verkopen op Vinted</td>
-                    <td>Ik verkoop kleding en schoenen op Vinted, waar ik mijn stijl deel en unieke items vind.</td>
-                    <td><img src="img/vinted.jpg" alt="Vinted"></td>
-                </tr>
-            </table>
-        </section>
-    </main>
+              <!-- Additional information about hobbies -->
+              <div class="row mt-5">
+                  <div class="col-md-4">
+                      <h3>Voetballen bij ksk Herentals</h3>
+                      <p>Voetballen is niet alleen een sport voor mij; het is een passie die me energie geeft en me leert om als team te werken. Als lid van ksk Herentals geniet ik van de spanning van de wedstrijden en de vreugde van het samenspelen met mijn teamgenoten. Het veld is mijn speeltuin waar ik mijn vaardigheden verbeter, vriendschappen smeed en belangrijke levenslessen leer zoals doorzettingsvermogen, teamwork en discipline.</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h3>Programmeren</h3>
+                      <p>Programmeren is mijn creatieve uitlaatklep en een intrigerende reis door de wereld van technologie. Het vermogen om code te schrijven en software te ontwikkelen opent deuren naar eindeloze mogelijkheden. Als gepassioneerde programmeur experimenteer ik met verschillende programmeertalen, bouw ik webapplicaties en werk ik aan boeiende projecten. Het proces om problemen op te lossen en innovatieve oplossingen te bedenken, fascineert me en drijft me om voortdurend te leren en te groeien.</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h3>Kledij en Schoenen Verkopen op Vinted</h3>
+                      <p>Naast mijn technische interesses ben ik ook geïnteresseerd in mode en duurzaamheid. Op platforms zoals Vinted heb ik mijn eigen kleine online winkel gecreëerd waar ik mijn gebruikte kleding en schoenen verkoop. Het is niet alleen een manier om mijn kledingkast op te ruimen, maar ook een bewuste keuze om bij te dragen aan een meer circulaire economie. Het fotograferen van kledingstukken, het onderhandelen met klanten en het creëren van aantrekkelijke productbeschrijvingen zijn vaardigheden die ik heb ontwikkeld door deze hobby, wat het voor mij een waardevolle en leerzame ervaring maakt.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
 
 
     <!-- Footer -->
     <footer class="bg-dark text-white">
-        <div class="container py-5">
+        <div class="container py-4">
           <div class="row">
             <!-- About Section -->
             <div class="col-md-4 mb-3 mb-md-0">
               <h2 class="mb-2 text-center">Over Mij</h2>
-              <p class="">
+              <p class="text-center">
                 Ik ben Deriana Morais, een toegewijde programmeur in opleiding aan
                 Thomas More Geel. Gedreven door code, creëer ik digitale
                 oplossingen met passie en precisie.
@@ -118,9 +213,7 @@
           </div>
         </div>
         <div
-          class="text-center py-3"
-          style="background-color: rgba(0, 0, 0, 0.1)"
-        >
+          class="text-center py-3 copyright">
           &copy; 2023 Deriana Morais
         </div>
       </footer>

@@ -1,129 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv - Ervaring</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="icon"
+      href="img/favicon_blue.png"
+      type="image/png"
+      sizes="HeightxWidth|any"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Ervaring</title>
-    <script src="https://kit.fontawesome.com/aab0dc8977.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/favicon_blue.png" type="image/png" sizes="HeightxWidth|any">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <nav class="sticky">
-        <ul>
-            <li><a href="index.html" class="active">DERIANA&nbsp;MORAIS</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a id="currentpage" href="#">Ervaring</a></li>
-            <li><a href="hobbys.html">Hobby's</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://www.instagram.com/deriana.ms/" target="_blank"><i class="social fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/deriana-morais/" target="_blank"><i class="social fa-brands fa-linkedin-in fa-lg" style="color: #ffffff;"></i></a></li>
-        </ul>
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-primary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Deriana Morais</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ervaring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobbys.html">Hobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.instagram.com/deriana.ms/"
+                target="_blank"
+                class="nav-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/deriana-morais/"
+                target="_blank"
+                class="nav-link"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <main>
-        <section class="experience">
-            <h2>Werkervaring</h2>
-            <div class="timeline">
-                <div class="experience-item">
-                    <div class="company-logo">
-                        <img src="img/Carrefour_logo.jpg" alt="Carrefour img">
-                    </div>
-                    <div class="year">jan. 2022 - heden</div>
-                    <div class="content">
-                        <h3>Winkelbediende</h3>
-                        <p>Carrefour Market, Vorselaar</p>
-                        <p>Verantwoordelijk voor het wegwijzen van klanten in de winkel.</p>
-                    </div>
+    <main class="container py-5">
+      <section>
+        <h2 class="mb-4 text-center pt-4">Werkervaring</h2>
+        <div class="accordion" id="experienceAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Winkelbediende - Carrefour Market, Vorselaar
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <p><strong>Datum: </strong> jan. 2022 - heden</p>
+                <p>
+                  Verantwoordelijk voor het wegwijzen van klanten in de winkel.
+                </p>
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="img/Carrefour_logo.jpg"
+                      alt="Carrefour logo"
+                      class="img-fluid rounded"
+                    />
+                  </div>
                 </div>
-                <div class="experience-item">
-                    <div class="company-logo">
-                        <img src="img/delhaize_logo.svg" alt="Delhaize img">
-                    </div>
-                    <div class="year">mei 2021 - jan. 2022</div>
-                    <div class="content">
-                        <h3>Winkelbediende</h3>
-                        <p>Delhaize, Grobbendonk</p>
-                        <p>Verantwoordelijk voor het wegwijzen van klanten in de winkel.</p>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="company-logo">
-                        <img src="img/Weyneshof_logo.png" alt="Weyneshof img">
-                    </div>
-                    <div class="year">jul. 2019 - aug. 2020</div>
-                    <div class="content">
-                        <h3>Hulpanimator</h3>
-                        <p>Speelplein Weyneshof vzw, Rijmenam</p>
-                        <p>Kinderen verzorgen en vermaken tijdens activiteiten.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white">
-        <div class="container py-5">
-          <div class="row">
-            <!-- About Section -->
-            <div class="col-md-4 mb-3 mb-md-0">
-              <h2 class="mb-2 text-center">Over Mij</h2>
-              <p class="">
-                Ik ben Deriana Morais, een toegewijde programmeur in opleiding aan
-                Thomas More Geel. Gedreven door code, creëer ik digitale
-                oplossingen met passie en precisie.
-              </p>
-            </div>
-            <!-- Contact Section -->
-            <div class="col-md-4 mb-3 text-center">
-              <h2 class="mb-2">Contact</h2>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="mailto:r0938845@student.thomasmore.be"
-                  class="text-white ms-3 me-4 fs-4"
-                  ><i class="bi bi-envelope"></i
-                ></a>
-                <a href="tel:+32467601764" class="text-white me-3 fs-4"
-                  ><i class="bi bi-telephone"></i
-                ></a>
               </div>
             </div>
-            <!-- Social Section -->
-            <div class="col-md-4 mb-3 text-center">
-              <h2 class="mb-2">Volg Mij</h2>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="https://www.instagram.com/deriana.ms/"
-                  target="_blank"
-                  class="text-white me-4 fs-4"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/deriana-morais/"
-                  target="_blank"
-                  class="text-white fs-4"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Winkelbediende - Delhaize, Grobbendonk
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <p><strong>Datum: </strong> mei 2021 - jan. 2022</p>
+                <p>
+                  Verantwoordelijk voor het wegwijzen van klanten in de winkel.
+                </p>
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="img/delhaize_logo.svg"
+                      alt="Delhaize logo"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Hulpanimator - Speelplein Weyneshof vzw, Rijmenam
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingThree"
+              data-bs-parent="#experienceAccordion"
+            >
+              <div class="accordion-body">
+                <p><strong>Datum: </strong> jul. 2019 - aug. 2020</p>
+                <p>Kinderen verzorgen en vermaken tijdens activiteiten.</p>
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="img/Weyneshof_logo.png"
+                      alt="Weyneshof logo"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="text-center py-3"
-          style="background-color: rgba(0, 0, 0, 0.1)"
-        >
-          &copy; 2023 Deriana Morais
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+      <div class="container py-4">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h2 class="mb-2 text-center">Over Mij</h2>
+            <p class="text-center">
+              Ik ben Deriana Morais, een toegewijde programmeur in opleiding aan
+              Thomas More Geel. Gedreven door code, creëer ik digitale
+              oplossingen met passie en precisie.
+            </p>
+          </div>
+          <!-- Contact Section -->
+          <div class="col-md-4 mb-3 text-center">
+            <h2 class="mb-2">Contact</h2>
+            <div class="d-flex justify-content-center">
+              <a
+                href="mailto:r0938845@student.thomasmore.be"
+                class="text-white ms-3 me-4 fs-4"
+                ><i class="bi bi-envelope"></i
+              ></a>
+              <a href="tel:+32467601764" class="text-white me-3 fs-4"
+                ><i class="bi bi-telephone"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Social Section -->
+          <div class="col-md-4 mb-3 text-center">
+            <h2 class="mb-2">Volg Mij</h2>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://www.instagram.com/deriana.ms/"
+                target="_blank"
+                class="text-white me-4 fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/deriana-morais/"
+                target="_blank"
+                class="text-white fs-4"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
         </div>
-      </footer>
-  
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </html>
-  
+      </div>
+      <div
+        class="text-center py-3 copyright">
+        &copy; 2023 Deriana Morais
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
